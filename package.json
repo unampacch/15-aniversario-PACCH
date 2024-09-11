@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/outfit": "^5.0.15",
+    "@fontsource/lilita-one": "^5.0.22",
     "@iconify-json/bi": "^1.2.0",
     "astro": "^4.15.4",
     "astro-icon": "^1.1.1",
