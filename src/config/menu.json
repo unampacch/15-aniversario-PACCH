@@ -1,0 +1,26 @@
+{
+  "main": [
+    {
+      "name": "Inicio",
+      "url": "/"
+    },
+    {
+      "name": "Testimonios",
+      "url": "#testimonios"
+    },
+    {
+      "name": "Talleres",
+      "url": "#talleres"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Aviso legal",
+      "url": "https://portalacademico.cch.unam.mx/aviso-legal"
+    },
+    {
+      "name": "Créditos",
+      "url": "https://portalacademico.cch.unam.mx/creditos"
+    }
+  ]
+}
