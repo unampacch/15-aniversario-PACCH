@@ -1,7 +1,7 @@
 ---
 import { eventos } from "@data";
 ---
-
+<img src="/banderines.svg" class="w-full my-2" alt="" />
 <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
   <h2 class="seccion">Eventos</h2>
   <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
@@ -18,7 +18,11 @@ import { eventos } from "@data";
           </header>
           <footer>
             <h2 class="text-lg text-center">{evento.nombre}</h2>
-            {evento.ponente && <p class="text-sm font-light text-center">Ponente: {evento.ponente}</p>}
+            {evento.ponente && (
+              <p class="text-sm font-light text-center">
+                Ponente: {evento.ponente}
+              </p>
+            )}
             <div class="grid grid-cols-3 mt-2 p-2 border-t border-slate-800 border-dashed">
               <div class="col-span-2 gap-2 text-sm">
                 <p>{evento.descripcion}</p>
@@ -35,7 +39,6 @@ import { eventos } from "@data";
     }
   </div>
 </div>
-<img src="/banderines.svg" class="w-full my-2" alt="">
 <style>
   h2.seccion {
     font-size: var(--headings-xl);
