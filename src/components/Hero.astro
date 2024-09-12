@@ -1,9 +1,12 @@
-<div class="hero text-center w-full h-svh top-0 flex items-center">
+<div class="hero text-center w-full h-svh flex items-center">
+  <div class="h-24 bg-gradient-to-t from-pinkown w-full absolute self-end"></div>
   <div class="w-screen-2xl mx-auto">
-    <h2 class="font-bold">15 años creciendo contigo</h2>
+    <h2 class="font-bold tracking-wide">15 años creciendo contigo</h2>
     <h3 class="text-lg">El gran evento será en:</h3>
     <div id="counter-back" class="xl:text-2xl font-light uppercase my-4"></div>
-    <div class="invitacion w-full hover:scale-105 transition-all bg-amber-100/70 backdrop-blur-lg shadow-2xl border-separate border-4 mt-10">
+    <div
+      class="invitacion w-full hover:scale-105 transition-all bg-amber-100/60 backdrop-blur-md shadow-2xl border-separate border-4 mt-10"
+    >
       <header class="p-2 border-b border-dashed border-slate-900">
         <h3 class="my-5">
           <span
@@ -22,7 +25,8 @@
         <div class="my-10">
           <a
             class="bg-gradient-to-r from-violet-700 to-pink-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gradient-to-l transition-colors cursor-pointer"
-            >Descarga el programa</a>
+            >Descarga el programa</a
+          >
         </div>
       </footer>
     </div>
@@ -50,7 +54,8 @@
     background-image: url("/hero/hero-portada-7.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
+    background-attachment: fixed;
     & .hero__inner {
     }
   }

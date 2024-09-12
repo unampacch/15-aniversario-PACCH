@@ -1,0 +1,66 @@
+---
+import { eventos } from "@data";
+---
+
+<div class="max-w-screen-xl mx-auto px-1 xl:px-2">
+  <h2 class="seccion">Eventos</h2>
+  <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+    {
+      eventos.map((evento) => (
+        <article class="card rounded-lg overflow-hidden border group">
+          <header class="overflow-hidden relative">
+            <img
+              class="group-hover:scale-110 transition-all group ease-in-out relative z-10"
+              src={evento.imagen}
+              alt={evento.descripcion}
+            />
+            <div class="h-24 bg-gradient-to-t from-pinkown w-full absolute z-20 self-end" />
+          </header>
+          <footer>
+            <h2 class="text-lg text-center">{evento.nombre}</h2>
+            {evento.ponente && <p class="text-sm font-light text-center">Ponente: {evento.ponente}</p>}
+            <div class="grid grid-cols-3 mt-2 p-2 border-t border-slate-800 border-dashed">
+              <div class="col-span-2 gap-2 text-sm">
+                <p>{evento.descripcion}</p>
+              </div>
+              <div class="text-sm flex flex-col items-end justify-center">
+                <p>{evento.fecha}</p>
+                <p>{evento.hora}</p>
+                <p>{evento.lugar}</p>
+              </div>
+            </div>
+          </footer>
+        </article>
+      ))
+    }
+  </div>
+</div>
+<img src="/banderines.svg" class="w-full my-2" alt="">
+<style>
+  h2.seccion {
+    font-size: var(--headings-xl);
+    font-family: var(--font-titulos);
+    text-align: center;
+    margin-top: 4rem;
+  }
+  p {
+    font-size: var(--font-cuerpo);
+    font-family: var(--font-cuerpo);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .eventos {
+    .card {
+      view-timeline-name: --card-fade;
+      view-timeline-axis: block;
+      animation-timeline: --card-fade;
+      animation-name: fade-in;
+      animation-range: entry 0% cover 42%;
+      h2 {
+        font-family: var(--font-titulos);
+      }
+    }
+  }
+</style>

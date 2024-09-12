@@ -1,0 +1,126 @@
+{
+  "eventos":
+  [
+    {
+      "id": 1,
+      "nombre": "Evento Inaugural",
+      "fecha": "2024-10-01",
+      "hora": "10:00",
+      "lugar": "Lugar 1",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
+      "ponente": "Pedrito Ruvalcaba",
+      "imagen": "https://placehold.co/600x400",
+      "video": "https://www.youtube.com/",
+      "publicacion": "2024-11-01"
+    },
+    {
+      "id": 2,
+      "nombre": "¿Qué es un Objeto de Aprendizaje?",
+      "fecha": "2024-10-02",
+      "hora": "11:00",
+      "lugar": "Lugar 2",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
+      "ponente": "Juanito Pérez",
+      "imagen": "https://placehold.co/600x400",
+      "video": "https://www.youtube.com/",
+      "publicacion": "2024-11-02"
+    },
+    {
+      "id": 3,
+      "nombre": "El estado actual de la educación",
+      "fecha": "2024-10-03",
+      "hora": "12:00",
+      "lugar": "Lugar 3",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
+      "ponente": "María Alvarado",
+      "imagen": "https://placehold.co/600x400",
+      "video": "https://www.youtube.com/",
+      "publicacion": "2024-11-03"
+    },
+    {
+      "id": 4,
+      "nombre": "Los alumnos y la tecnología",
+      "fecha": "2024-10-04",
+      "hora": "13:00",
+      "lugar": "Lugar 4",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
+      "ponente": "Ricardo González",
+      "imagen": "https://placehold.co/600x400",
+      "video": "https://www.youtube.com/",
+      "publicacion": "2024-11-04"
+    },
+    {
+      "id": 5,
+      "nombre": "La educación en línea",
+      "fecha": "2024-10-05",
+      "hora": "14:00",
+      "lugar": "Lugar 5",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
+      "ponente": "Pedro Pérez",
+      "imagen": "https://placehold.co/600x400",
+      "video": "https://www.youtube.com/",
+      "publicacion": "2024-11-05"
+    }
+  ],
+  "testimonios":
+  [
+    {
+      "nombre": "Juan Pérez",
+      "texto": "El portal es muy fácil de usar y los aprendizajes son muy interesantes.",
+      "imagen": "https://placehold.co/100x100"
+    },
+    {
+      "nombre": "María Alvarado",
+      "texto": "Me encacanta aprender en este portal, creo que es el mejor.",
+      "imagen": "https://placehold.co/100x100"
+    },
+    {
+      "nombre": "Ricardo González",
+      "texto": "Los cursos son muy completos y los profesores son muy buenos.",
+      "imagen": "https://placehold.co/100x100"
+    }
+  ],
+  "talleres":
+  [
+    {
+      "nombre": "Taller 1",
+      "fecha": "2024-10-01",
+      "hora": "10:00",
+      "lugar": "Lugar 1",
+      "descripcion": "Descripción 1",
+      "imagen": "https://placehold.co/600x400",
+      "link": "https://moodle.portalacademico.cch.unam.mx/",
+      "publicacion": "2024-11-01"
+    },
+    {
+      "nombre": "Taller 2",
+      "fecha": "2024-10-02",
+      "hora": "11:00",
+      "lugar": "Lugar 2",
+      "descripcion": "Descripción 2",
+      "imagen": "https://placehold.co/600x400",
+      "link": "https://moodle.portalacademico.cch.unam.mx/",
+      "publicacion": "2024-11-02"
+    },
+    {
+      "nombre": "Taller 3",
+      "fecha": "2024-10-03",
+      "hora": "12:00",
+      "lugar": "Lugar 3",
+      "descripcion": "Descripción 3",
+      "imagen": "https://placehold.co/600x400",
+      "link": "https://moodle.portalacademico.cch.unam.mx/",
+      "publicacion": "2024-11-03"
+    },
+    {
+      "nombre": "Taller 4",
+      "fecha": "2024-10-04",
+      "hora": "13:00",
+      "lugar": "Lugar 4",
+      "descripcion": "Descripción 4",
+      "imagen": "https://placehold.co/600x400",
+      "link": "https://moodle.portalacademico.cch.unam.mx/",
+      "publicacion": "2024-11-04"
+    }
+  ]
+}
