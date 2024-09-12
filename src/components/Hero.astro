@@ -1,0 +1,83 @@
+<div class="hero text-center w-full h-svh top-0 flex items-center">
+  <div class="w-screen-2xl mx-auto">
+    <h2 class="font-bold">15 años creciendo contigo</h2>
+    <h3 class="text-lg">El gran evento será en:</h3>
+    <div id="counter-back" class="xl:text-2xl font-light uppercase my-4"></div>
+    <div class="invitacion w-full hover:scale-105 transition-all bg-amber-100/70 backdrop-blur-lg shadow-2xl border-separate border-4 mt-10">
+      <header class="p-2 border-b border-dashed border-slate-900">
+        <h3 class="my-5">
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r to-violet-700 from-pink-600"
+            >¡Te invito a mis quince!</span
+          >
+        </h3>
+        <h4 class="text-xl">15 de Octubre de 2024</h4>
+      </header>
+      <footer>
+        <div class="grid grid-cols-3 my-4">
+          <div>Sala de Consejo DGCCH</div>
+          <div class="border-x border-dashed border-slate-900">13:00 hrs.</div>
+          <div>¡No faltes!</div>
+        </div>
+        <div class="my-10">
+          <a
+            class="bg-gradient-to-r from-violet-700 to-pink-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gradient-to-l transition-colors cursor-pointer"
+            >Descarga el programa</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<style>
+  h2 {
+    font-size: var(--headings-xxl);
+    font-family: var(--font-titulos);
+  }
+  h3 {
+    font-size: var(--headings-lg);
+    font-family: var(--font-cuerpo);
+  }
+  .invitacion {
+    h3 {
+      font-size: var(--headings-xl);
+      font-family: var(--font-titulos);
+    }
+  }
+  #counter-back {
+    font-family: var(--font-cuerpo);
+  }
+  .hero {
+    background-image: url("/hero/hero-portada-7.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    & .hero__inner {
+    }
+  }
+</style>
+<script is:inline>
+  const counterBack = document.getElementById("counter-back");
+  const targetDate = new Date("October 15, 2024 00:00:00").getTime();
+
+  function updateCounter() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    counterBack.innerHTML = `${days} <span class="font-bold">días</span> ${hours} <span class="font-bold">horas</span> ${minutes} <span class="font-bold">minutos</span> ${seconds} <span class="font-bold">segundos</span>`;
+
+    if (distance < 0) {
+      clearInterval(interval);
+      counterBack.innerHTML = "¡Llegó el día felices 15 años!";
+    }
+  }
+
+  const interval = setInterval(updateCounter, 1000);
+  updateCounter();
+</script>

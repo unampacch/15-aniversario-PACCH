@@ -1,65 +1,92 @@
 ---
 import Logo from "@/components/Logo.astro";
-import {main} from "@/config/menu.json";
+import { main } from "@/config/menu.json";
 interface main {
-  name:string
-  url:string
+  name: string;
+  url: string;
 }
-const { pathname } = Astro.url
+const { pathname } = Astro.url;
 ---
 
-<header
->
-
-  <nav class="navbar md:px-5 mx-auto flex flex-wrap items-center justify-between menu w-full py-4 z-50  top-0 hover:transition-all sticky">
+<header id="header" class="fixed top-0 z-50 w-full">
+  <nav
+    class="navbar md:px-5 mx-auto flex flex-wrap items-center justify-between menu w-full py-4 z-50 top-0 hover:transition-all"
+  >
     <!-- logo -->
     <div class="order-0">
       <a href="/"><Logo class="hidden md:block h-10 w-15" /></a>
     </div>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+    <button
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-default"
+      aria-expanded="false"
+    >
       <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
       </svg>
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+      >
         <li>
           {
-            main.map((item) =>
-              (
-                <a
-                  href={item.url}
-                  class={`hover:text-slate-400 transition-all ${
-                  (pathname === item.url) &&
-                  "active"
-                  }`}>
-                  {item.name}
-                </a>
-              )
-            )
+            main.map((item) => (
+              <a
+                href={item.url}
+                class={`hover:text-slate-400 transition-all ${
+                  pathname === item.url && "active"
+                }`}
+              >
+                {item.name}
+              </a>
+            ))
           }
         </li>
       </ul>
     </div>
   </nav>
-
 </header>
 <style>
   a.active {
-
-    text-decoration: overline ;
+    text-decoration: overline;
+  }
+  .menu-down {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: var(--transition-smooth);
   }
 </style>
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.querySelector('[data-collapse-toggle]');
-    const navbar = document.getElementById('navbar-default');
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector("[data-collapse-toggle]");
+    const navbar = document.getElementById("navbar-default");
+    const header = document.getElementById("header");
 
-    toggleButton.addEventListener('click', function () {
-      const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-      toggleButton.setAttribute('aria-expanded', !isExpanded);
-      navbar.classList.toggle('hidden');
+    toggleButton.addEventListener("click", function () {
+      const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+      toggleButton.setAttribute("aria-expanded", !isExpanded);
+      navbar.classList.toggle("hidden");
+    });
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        header.classList.add("menu-down");
+      } else {
+        header.classList.remove("menu-down");
+      }
     });
   });
 </script>

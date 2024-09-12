@@ -25,13 +25,11 @@ const {
       ogType={ogType}
     />
   </head>
-  <body>
-    <div class="min-h-screen flex flex-col justify-between">
-      <Header />
-      <main class="animate-fade animate-duration-300 animate-delay-100">
-        <slot />
-      </main>
-      <Footer />
-    </div>
+  <body class="animate-fade animate-duration-300 animate-delay-100">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
