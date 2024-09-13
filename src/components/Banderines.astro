@@ -1,9 +1,17 @@
 <div class="md:grid md:grid-cols-2">
-  <img src="/banderines.svg" class="md:w-full my-2" alt="" />
-  <img src="/banderines.svg" class="md:w-full hidden md:block my-2 invertir" alt="" />
+  <img src="/banderines.svg" class="banderin md:w-full my-2" alt="" />
+  <img
+    src="/banderines.svg"
+    class="banderin md:w-full hidden md:block my-2"
+    alt=""
+  />
 </div>
 <style>
-  .invertir {
-    transform: scaleX(-1);
+  .banderin {
+    view-timeline-name: --banderin-fade;
+    view-timeline-axis: block;
+    animation-timeline: --banderin-fade;
+    animation-name: fade-in;
+    animation-range: entry 0% cover 82%;
   }
 </style>
