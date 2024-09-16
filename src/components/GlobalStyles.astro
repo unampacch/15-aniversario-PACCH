@@ -33,7 +33,7 @@
   @keyframes fade-in {
     from {
       opacity: 0;
-      transform: translateY(48px) scale(0.9);
+      transform: translateY(100px) scale(0.8);
     }
 
     to {
@@ -49,6 +49,11 @@
     }
   }
 
+  @keyframes reducir {
+    to {
+      transform: scale(var(--max-scale, 0));
+    }
+  }
   @keyframes move {
     to {
       transform: translateX(var(--max-scroll-distance));

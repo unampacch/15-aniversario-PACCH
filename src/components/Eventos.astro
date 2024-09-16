@@ -1,12 +1,13 @@
 ---
 import { eventos } from "@data";
+import { Icon } from "astro-icon/components";
 import Banderines from "@/components/Banderines.astro";
 ---
 
-<section class="eventos pt-7">
+<section class="eventos py-7">
   <Banderines />
   <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
-    <h2 class="seccion">Eventos</h2>
+    <h2 class="seccion text-white">Eventos</h2>
     <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
       {
         eventos.map((evento) => (
@@ -33,9 +34,18 @@ import Banderines from "@/components/Banderines.astro";
                   <p>{evento.descripcion}</p>
                 </div>
                 <div class="text-sm flex flex-col items-end justify-center">
-                  <p>{evento.fecha}</p>
-                  <p>{evento.hora}</p>
-                  <p>{evento.lugar}</p>
+                  <p class="inline-flex items-center gap-1">
+                    <Icon name="bi:calendar" />
+                    {evento.fecha}
+                  </p>
+                  <p class="inline-flex items-center gap-1">
+                    <Icon name="bi:clock" />
+                    {evento.hora}
+                  </p>
+                  <p class="inline-flex items-center gap-1">
+                    <Icon name="bi:pin-map" />
+                    {evento.lugar}
+                  </p>
                 </div>
               </div>
             </footer>
