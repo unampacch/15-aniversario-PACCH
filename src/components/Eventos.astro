@@ -4,10 +4,10 @@ import { Icon } from "astro-icon/components";
 import Banderines from "@/components/Banderines.astro";
 ---
 
-<section class="bg-blueown py-7">
+<section class="seccion bg-blueown py-7">
   <Banderines />
   <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
-    <h2 class="seccion text-white text-center text-3xl md:text-5xl">Eventos</h2>
+    <h2>Eventos</h2>
     <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
       {
         eventos.map((evento) => (
@@ -22,7 +22,7 @@ import Banderines from "@/components/Banderines.astro";
             </header>
             <footer>
               <div class="bg-slate-200/75 py-1">
-                <h2 class="text-xl text-center">{evento.nombre}</h2>
+                <h3 class="text-xl text-center">{evento.nombre}</h3>
                 {evento.ponente && (
                   <p class="text-sm font-light text-center">
                     Ponente: {evento.ponente}
@@ -56,10 +56,6 @@ import Banderines from "@/components/Banderines.astro";
   </div>
 </section>
 <style>
-  h2.seccion {
-    font-family: var(--font-titulos);
-    margin-top: 4rem;
-  }
   p {
     font-size: var(--font-cuerpo);
     font-family: var(--font-cuerpo);
@@ -75,7 +71,7 @@ import Banderines from "@/components/Banderines.astro";
       animation-timeline: --card-fade;
       animation-name: fade-in;
       animation-range: entry 0% cover 52%;
-      h2 {
+      h3 {
         font-family: var(--font-titulos);
       }
     }

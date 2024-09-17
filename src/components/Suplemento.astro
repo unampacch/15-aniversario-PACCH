@@ -1,4 +1,29 @@
-<div class="bg-purpleown">
-hola que pedo
+---
+import { Icon } from "astro-icon/components";
+---
 
-</div>
+<section class="seccion bg-purpleown w-full">
+  <div class="max-w-screen-xl mx-auto px-2">
+    <h2>Gaceta CCH - Suplemento</h2>
+    <div class="grid grid-cols-3 gap-4 mt-5 items-center group">
+      <div class="bg-white/85 p-4 rounded-xl border border-gray-800 col-span-2">
+        <h3 class="text-xl md:text-3xl font-bold mb-2">15 años tu Portal Académico del CCH</h3>
+        <p class="text-lg xl:text-xl pt-2 border-t border-slate-800 border-dashed">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+          Descargar el documento en <a href="/portal10anios.pdf" class="underline hover:text-blueown">
+            PDF <Icon class="inline" name="bi:file-earmark-pdf-fill" /></a
+          >
+        </p>
+      </div>
+      <a class="overflow-hidden" href="/portal10anios.pdf"
+        ><img
+          src="/portal10anios-1.jpg"
+          class="ease-in-out transition-all group-hover:md:scale-105 shadow-xl"
+          alt="portada pdf"
+        /></a
+      >
+    </div>
+  </div>
+</section>

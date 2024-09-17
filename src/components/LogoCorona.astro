@@ -1,0 +1,41 @@
+---
+import Logo from "@/components/Logo.astro";
+---
+
+<section class="w-full bg-pinkown py-4 xl:py-8">
+  <div class="max-w-screen-sm mx-auto">
+    <div class="corona flex flex-col">
+      <img
+        src="/corona-1.webp"
+        alt="Logo Corona"
+        class="max-w-32 md:max-w-fit"
+      />
+      <Logo class="px-2" />
+    </div>
+    <p class="text-center pt-5 text-xl">
+      Nuestro <strong>nuevo logo</strong> es una chulada. ¡Felices 15!
+    </p>
+  </div>
+</section>
+<style>
+  @keyframes corona {
+    from {
+      transform: translate(-20px, -200px) rotate(0deg);
+      scale: 0.6;
+      opacity: 0;
+    }
+    to {
+      transform: translate(-20px, 20px) rotate(-10deg);
+      scale: 1.1;
+      opacity: 1;
+    }
+  }
+  .corona {
+    img {
+      view-timeline-name: --corona;
+      view-timeline-axis: block;
+      animation-timeline: --corona;
+      animation-name: corona;
+    }
+  }
+</style>
