@@ -1,7 +1,9 @@
 <div class="hero text-center w-full h-svh flex items-center">
   <!--   <div class="h-24 bg-gradient-to-t from-pinkown w-full absolute self-end"></div> -->
   <div class="w-screen-2xl mx-auto">
-    <h2 class="font-bold tracking-wide animate-fade-up animate-duration-1000">15 años creciendo contigo</h2>
+    <h2 class="font-normal tracking-wide animate-fade-up animate-duration-1000">
+      15 años creciendo contigo
+    </h2>
     <div
       class="invitacion animate-fade animate-duration-1000 animate-delay-500 w-full hover:scale-105 transition-all bg-amber-100/60 backdrop-blur-md shadow-2xl border-separate border-4 mt-10"
     >
@@ -12,12 +14,13 @@
             >¡Te invito a mis quince!</span
           >
         </h3>
-        <h4 class="text-xl">15 de Octubre de 2024</h4>
+        <h4 class="text-xl" id="target-date"></h4>
       </header>
       <footer>
         <div class="grid grid-cols-3 my-4 text-lg">
           <div>Sala de Consejo DGCCH</div>
-          <div class="border-x border-dashed border-slate-900">13:00 hrs.</div>
+          <div id="target-time" class="border-x border-dashed border-slate-900">
+          </div>
           <div>¡No faltes!</div>
         </div>
         <div class="my-10">
@@ -63,7 +66,9 @@
 </style>
 <script is:inline>
   const counterBack = document.getElementById("counter-back");
-  const targetDate = new Date("October 15, 2024 00:00:00").getTime();
+  const targetDate = new Date("November 15, 2024 13:00:00").getTime();
+  const targetDateElement = document.getElementById("target-date");
+  const targetTimeElement = document.getElementById("target-time");
 
   function updateCounter() {
     const now = new Date().getTime();
@@ -86,4 +91,13 @@
 
   const interval = setInterval(updateCounter, 1000);
   updateCounter();
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  targetDateElement.innerHTML = new Date(targetDate).toLocaleDateString(
+    "es-ES",
+    options
+  );
+
+  const timeOptions = { hour: "2-digit", minute: "2-digit" };
+  targetTimeElement.innerHTML =
+    new Date(targetDate).toLocaleTimeString("es-ES", timeOptions) + " hrs.";
 </script>
