@@ -1,5 +1,6 @@
 ---
 import Logo from "@/components/Logo.astro";
+import LogoLow from "@/components/LogoLow.astro";
 import { main } from "@/config/menu.json";
 interface main {
   name: string;
@@ -15,6 +16,7 @@ const { pathname } = Astro.url;
     <!-- logo -->
     <div class="order-0">
       <a href="/"><Logo class="hidden md:block h-8 w-15" /></a>
+      <a href="/"><LogoLow class="md:hidden h-8 w-15" /></a>
     </div>
     <button
       data-collapse-toggle="navbar-default"
@@ -41,7 +43,7 @@ const { pathname } = Astro.url;
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+        class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
       >
         <li>
           {

@@ -1,0 +1,38 @@
+<div class="oldie xl:py-24 py-2 grid grid-cols-2 bg-red-100 items-center">
+  <div class="text-center flex flex-col items-end justify-around gap-11">
+    <span class="rounded-full bg-green-600 text-white p-2 rotate-6"
+      >El portal es quinceañero como tú...</span
+    >
+    <span class="rounded-full bg-green-600 text-white p-2 -rotate-6"
+      >Nosotros nacimos el mismo año que tú...</span
+    >
+  </div>
+  <img src="/oldie.webp" alt="somos jovenes" />
+</div>
+<style>
+  @keyframes rotate {
+    to {
+      transform: rotate(-12deg);
+      scale: 1.2;
+    }
+  }
+  @keyframes rotate2 {
+    to {
+      transform: rotate(12deg);
+      scale: 1.2;
+    }
+  }
+  .oldie {
+    background-color: #6e3f6a;
+    span {
+      view-timeline-name: --oldie-span;
+      view-timeline-axis: block;
+      animation-timeline: --oldie-span;
+      animation-name: rotate;
+      animation-range: entry 53% cover 100%;
+    }
+    span:last-child {
+      animation-name: rotate2;
+    }
+  }
+</style>
