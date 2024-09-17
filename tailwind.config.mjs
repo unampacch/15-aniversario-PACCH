@@ -5,7 +5,9 @@ export default {
 	theme: {
 		extend: {
       colors: {
-        pinkown: 'rgb(var(--pink-own) / <alpha-value>)'
+        pinkown: 'rgb(var(--pink-own) / <alpha-value>)',
+        blueown: 'rgb(var(--blue-own) / <alpha-value>)',
+        purpleown: 'rgb(var(--purple-own) / <alpha-value>)'
       }
     },
 	},

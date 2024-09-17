@@ -4,10 +4,10 @@ import { Icon } from "astro-icon/components";
 import Banderines from "@/components/Banderines.astro";
 ---
 
-<section class="eventos py-7">
+<section class="bg-blueown py-7">
   <Banderines />
   <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
-    <h2 class="seccion text-white">Eventos</h2>
+    <h2 class="seccion text-white text-center text-3xl md:text-5xl">Eventos</h2>
     <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
       {
         eventos.map((evento) => (
@@ -56,13 +56,8 @@ import Banderines from "@/components/Banderines.astro";
   </div>
 </section>
 <style>
-  .eventos {
-    background-color: #7590a2;
-  }
   h2.seccion {
-    font-size: var(--headings-xl);
     font-family: var(--font-titulos);
-    text-align: center;
     margin-top: 4rem;
   }
   p {
