@@ -7,7 +7,7 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-   base: '/15aniversario',
+  base: import.meta.env.DEV ? "." : "/15aniversario",
   integrations: [tailwind(), icon(
     {
     include: {

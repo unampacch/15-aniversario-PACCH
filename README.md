@@ -5,11 +5,13 @@
 ```sh
 npm install
 ```
+
 > Para entrar en entorno de desarrollo
 
 ```sh
 npm run dev
 ```
+
 ## Otros comandos de Astro
 
 All commands are run from the root of the project, from a terminal:
