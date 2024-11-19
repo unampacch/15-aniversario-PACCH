@@ -6,11 +6,11 @@
     },
     {
       "name": "Eventos",
-      "url": "#eventos"
+      "url": "./#eventos"
     },
     {
       "name": "Suplemento",
-      "url": "#suplemento"
+      "url": "./#suplemento"
     }
   ],
   "footer": [

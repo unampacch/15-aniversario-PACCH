@@ -8,44 +8,39 @@ import Banderines from "@/components/Banderines.astro";
   <Banderines />
   <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
     <h2>Eventos</h2>
-    <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+    <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 auto-cols-max">
       {
         eventos.map((evento) => (
           <article class="card rounded-lg overflow-hidden border border-gray-500 group">
             <header class="overflow-hidden relative">
-              <img
-                class="group-hover:scale-110 transition-all group ease-in-out relative z-10"
-                src={evento.imagen}
-                alt={evento.descripcion}
-              />
+              <lite-youtube videoid={evento.video}>
+                <a
+                  class="lite-youtube-fallback"
+                  href={`https://www.youtube.com/watch?v=${evento.video}`}
+                >
+                  Watch on YouTube: "Sample output of devtools-to-video cli
+                  tool"
+                </a>
+                <!-- --><img
+                  class="group-hover:scale-110 transition-all group ease-in-out relative z-10"
+                  src={evento.imagen}
+                  alt={evento.descripcion}
+                />
+              </lite-youtube>
               <div class="h-24 bg-gradient-to-t from-pinkown w-full absolute z-20 self-end" />
             </header>
-            <footer>
+            <footer class="flex flex-col h-full">
               <div class="bg-slate-200/75 py-1">
                 <h3 class="text-xl text-center">{evento.nombre}</h3>
-                {evento.ponente && (
+                {evento.entrevistado && (
                   <p class="text-sm font-light text-center">
-                    Ponente: {evento.ponente}
+                    Entrevistado: {evento.entrevistado}
                   </p>
                 )}
               </div>
-              <div class="grid grid-cols-3 p-2 border-t border-slate-800 border-dashed bg-slate-50">
-                <div class="col-span-2 gap-2 text-sm">
+              <div class="p-2 border-t border-slate-800 border-dashed bg-slate-50 h-full">
+                <div class="text-sm">
                   <p>{evento.descripcion}</p>
-                </div>
-                <div class="text-sm flex flex-col items-end justify-center">
-                  <p class="inline-flex items-center gap-1">
-                    <Icon name="bi:calendar" />
-                    {evento.fecha}
-                  </p>
-                  <p class="inline-flex items-center gap-1">
-                    <Icon name="bi:clock" />
-                    {evento.hora}
-                  </p>
-                  <p class="inline-flex items-center gap-1">
-                    <Icon name="bi:pin-map" />
-                    {evento.lugar}
-                  </p>
                 </div>
               </div>
             </footer>
@@ -77,3 +72,6 @@ import Banderines from "@/components/Banderines.astro";
     }
   }
 </style>
+<script>
+  import "@justinribeiro/lite-youtube"
+</script>

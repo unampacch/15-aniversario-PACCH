@@ -3,14 +3,13 @@
   [
     {
       "id": 1,
-      "nombre": "Evento Inaugural",
+      "nombre": "Video conmemorativo: 15 años del PACCH",
       "fecha": "2024-10-01",
       "hora": "10:00",
       "lugar": "Lugar 1",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
-      "ponente": "Pedrito Ruvalcaba",
+      "descripcion": "El Portál Académico del CCH nació en el año 2009 como un pequeño proyecto con grandes ideas, un espacio virtual que quería ser el preferido de la comunidad CCH y más…",
       "imagen": "https://placehold.co/600x400",
-      "video": "https://www.youtube.com/",
+      "video": "w8NM-UVgYCY",
       "publicacion": "2024-11-01"
     },
     {
@@ -20,7 +19,7 @@
       "hora": "11:00",
       "lugar": "Lugar 2",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
-      "ponente": "Juanito Pérez",
+      "entrevistado": "Juanito Pérez",
       "imagen": "https://placehold.co/600x400",
       "video": "https://www.youtube.com/",
       "publicacion": "2024-11-02"
@@ -32,7 +31,7 @@
       "hora": "12:00",
       "lugar": "Lugar 3",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
-      "ponente": "María Alvarado",
+      "entrevistado": "María Alvarado",
       "imagen": "https://placehold.co/600x400",
       "video": "https://www.youtube.com/",
       "publicacion": "2024-11-03"
@@ -44,7 +43,7 @@
       "hora": "13:00",
       "lugar": "Lugar 4",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
-      "ponente": "Ricardo González",
+      "entrevistado": "Ricardo González",
       "imagen": "https://placehold.co/600x400",
       "video": "https://www.youtube.com/",
       "publicacion": "2024-11-04"
@@ -56,7 +55,7 @@
       "hora": "14:00",
       "lugar": "Lugar 5",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris sem, facilisis sit amet orci vitae, finibus vulputate turpis. Nam eget mi eget odio tempus porta.",
-      "ponente": "Pedro Pérez",
+      "entrevistado": "Pedro Pérez",
       "imagen": "https://placehold.co/600x400",
       "video": "https://www.youtube.com/",
       "publicacion": "2024-11-05"
