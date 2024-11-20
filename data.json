@@ -60,6 +60,18 @@
       "imagen": "https://placehold.co/600x400",
       "video": "9WLTjw7kglM",
       "publicacion": "2024-11-05"
+    },
+    {
+      "id": 6,
+      "nombre": "Luis Cano",
+      "fecha": "2024-10-05",
+      "hora": "14:00",
+      "lugar": "Lugar 5",
+      "descripcion": "¿Cómo hacer la transición de un modelo presencial a uno en línea?",
+      "entrevistado": "Coordinador Instruccional de PEL",
+      "imagen": "https://placehold.co/600x400",
+      "video": "_kNKA2qXeyo",
+      "publicacion": "2024-11-05"
     }
   ],
   "testimonios":
