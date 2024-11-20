@@ -7,38 +7,26 @@ import Banderines from "@/components/Banderines.astro";
 <section class="seccion bg-blueown py-7" id="eventos">
   <Banderines />
   <div class="max-w-screen-xl mx-auto px-1 xl:px-2">
-    <h2>Eventos</h2>
-    <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 auto-cols-max">
+    <h2>Entrevistas</h2>
+    <div class="eventos grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
       {
         eventos.map((evento) => (
-          <article class="card rounded-lg overflow-hidden border border-gray-500 group">
-            <header class="overflow-hidden relative">
-              <lite-youtube videoid={evento.video}>
-                <a
-                  class="lite-youtube-fallback"
-                  href={`https://www.youtube.com/watch?v=${evento.video}`}
-                >
-                  Watch on YouTube: "Sample output of devtools-to-video cli
-                  tool"
-                </a>
-                <!-- --><img
-                  class="group-hover:scale-110 transition-all group ease-in-out relative z-10"
-                  src={evento.imagen}
-                  alt={evento.descripcion}
-                />
-              </lite-youtube>
-              <div class="h-24 bg-gradient-to-t from-pinkown w-full absolute z-20 self-end" />
+          <article class="card rounded-lg overflow-hidden border border-gray-500 group bg-slate-50">
+            <header class="overflow-hidden">
+              <lite-youtube
+                videoid={evento.video}
+              ></lite-youtube>
             </header>
-            <footer class="flex flex-col h-full">
+            <footer class="flex flex-col">
               <div class="bg-slate-200/75 py-1">
                 <h3 class="text-xl text-center">{evento.nombre}</h3>
                 {evento.entrevistado && (
-                  <p class="text-sm font-light text-center">
-                    Entrevistado: {evento.entrevistado}
+                  <p class="text-xs font-light text-center">
+                    {evento.entrevistado}
                   </p>
                 )}
               </div>
-              <div class="p-2 border-t border-slate-800 border-dashed bg-slate-50 h-full">
+              <div class="p-2 border-t border-slate-800 border-dashed  h-full">
                 <div class="text-sm">
                   <p>{evento.descripcion}</p>
                 </div>
@@ -73,5 +61,5 @@ import Banderines from "@/components/Banderines.astro";
   }
 </style>
 <script>
-  import "@justinribeiro/lite-youtube"
+  import "@justinribeiro/lite-youtube";
 </script>
