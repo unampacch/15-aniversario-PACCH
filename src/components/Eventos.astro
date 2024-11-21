@@ -19,15 +19,15 @@ import Banderines from "@/components/Banderines.astro";
             </header>
             <footer class="flex flex-col">
               <div class="bg-slate-200/75 py-1">
-                <h3 class="text-xl text-center">{evento.nombre}</h3>
+                <h3 class="text-2xl text-center">{evento.nombre}</h3>
                 {evento.entrevistado && (
-                  <p class="text-xs font-light text-center">
+                  <p class="text-lg font-light text-center">
                     {evento.entrevistado}
                   </p>
                 )}
               </div>
               <div class="p-2 border-t border-slate-800 border-dashed  h-full">
-                <div class="text-sm">
+                <div class="text-base font-light">
                   <p>{evento.descripcion}</p>
                 </div>
               </div>

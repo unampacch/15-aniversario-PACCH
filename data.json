@@ -51,14 +51,14 @@
     },
     {
       "id": 5,
-      "nombre": "Angélica Ortiz",
+      "nombre": "Angie Ortiz",
       "fecha": "2024-10-05",
       "hora": "14:00",
       "lugar": "Lugar 5",
       "descripcion": "¿Qué es un objeto de aprendizaje?",
       "entrevistado": "Profesora de Inglés",
       "imagen": "https://placehold.co/600x400",
-      "video": "9WLTjw7kglM",
+      "video": "eJ6RdYamAug",
       "publicacion": "2024-11-05"
     },
     {
@@ -72,6 +72,39 @@
       "imagen": "https://placehold.co/600x400",
       "video": "_kNKA2qXeyo",
       "publicacion": "2024-11-05"
+    },
+    {
+      "id": 7,
+      "nombre": "Isabel Díaz del Castillo",
+      "fecha": "2024-10-06",
+      "hora": "15:00",
+      "lugar": "Lugar 6",
+      "descripcion": "¿Cómo surge el PACCH?",
+      "entrevistado": "Profesora fundadora del PACCH",
+      "imagen": "https://placehold.co/600x400",
+      "video": "ekPuTxb-sG0",
+      "publicacion": "2024-11-06"
+    },
+    {
+      "id": 8,
+      "nombre": "Espartaco Rosales",
+      "descripcion": "¿La transición de lo análogo a lo digital fue compleja?",
+      "entrevistado": "Profesor de TLRIID",
+      "video": "eBM8pt_O5hg"
+    },
+    {
+      "id": 9,
+      "nombre": "Alma Mireya Arrieta",
+      "descripcion": "¿Cuál es el objetivo de las asignaturas en línea?",
+      "entrevistado": "Profesora de Física",
+      "video": "inW77QVR9ws"
+    },
+    {
+      "id": 10,
+      "nombre": "Daniela Muñóz y Juno Plascencia",
+      "descripcion": "¿Cómo impactó esta experiencia en sus vidas?",
+      "entrevistado": "Alumnas de Opciones Técnicas",
+      "video": "dHowgGwcgu0"
     }
   ],
   "testimonios":
